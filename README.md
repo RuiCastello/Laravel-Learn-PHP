@@ -1,2 +1,18 @@
 # Laravel-Learn-PHP
-Practice some PHP functions and a bit of Laravel
+Used Laravel to refresh on some PHP functions and play around a bit with laravel, leaving some helpful comments in the code.
+
+[DEMO](https://demos.canalfoto.org/learn-php/strings) 
+<br />
+
+All interesting code is in the controllers.
+<br />
+<br />
+Routes (GET only):
+- /strings
+- /numbers
+- /forms 
+- / 
+<br />
+
+
+
