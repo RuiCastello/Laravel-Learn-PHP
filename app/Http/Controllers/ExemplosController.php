@@ -110,8 +110,25 @@ class ExemplosController extends Controller
 
         $title = "Forms - User Input";
 
+        // $preContent = '
+        // <form action="'.$_SERVER['PHP_SELF'].'" method="get">
+        // Name: <input type="text" name="name">
+        // <input type="submit">
+        // </form>
+        // ';
+
+        // Various ways to get current url or url of a specfic route or action 
+        // 1: Current url
+        // $current_url = url()->current() ;
+        
+        // 2: url from specific route
+        // $current_url = route('forms');
+        
+        // 3: url from specific controller and method
+        $current_url = action([ExemplosController::class, 'forms']);
+
         $preContent = '
-        <form action="'.$_SERVER['PHP_SELF'].'" method="get">
+        <form action="'.$current_url.'" method="get">
         Name: <input type="text" name="name">
         <input type="submit">
         </form>
